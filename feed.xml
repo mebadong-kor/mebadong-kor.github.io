@@ -5,9 +5,69 @@
     <description></description>
     <link>//</link>
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 May 2021 10:29:28 +0900</pubDate>
-    <lastBuildDate>Thu, 13 May 2021 10:29:28 +0900</lastBuildDate>
+    <pubDate>Thu, 13 May 2021 17:49:56 +0900</pubDate>
+    <lastBuildDate>Thu, 13 May 2021 17:49:56 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Method Reference::메서드 참조</title>
+        <description>&lt;h1 id=&quot;-overview&quot;&gt;👓 Overview&lt;/h1&gt;
+
+&lt;p&gt; 메서드 참조(Method Reference)를 사용하면 불필요한 매개변수를 제거하고 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::&lt;/code&gt; 기호를 사용하여 해당 메서드를 표현할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;클래스명::메서드명
+or
+객체명::메서드명
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;-how-to-use&quot;&gt;💡 How to use?&lt;/h1&gt;
+
+&lt;p&gt;메서드 표현식은 람다 표현식에 대응된다.&lt;/p&gt;
+
+&lt;h2 id=&quot;-클래스명인스턴스메서드&quot;&gt;✔ 클래스명::인스턴스메서드&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;첫 번째 파라미터가 메서드의 수신자&lt;/code&gt;가 되고, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;나머지 파라미터는 해당 메서드의 인자&lt;/code&gt;로 전달된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(x, y) -&amp;gt; x.compareToIgnoreCase(y)  // lambda expression
+String::compareToIgnoreCase         // method reference
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;-클래스명정적메서드&quot;&gt;✔ 클래스명::정적메서드&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;모든 파라미터가 정적 메서드의 인자&lt;/code&gt;로 전달된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x -&amp;gt; Object.isNull(x) // lambda expression
+Object::isNull        // method reference
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;-객체명인스턴스메서드&quot;&gt;✔ 객체명::인스턴스메서드&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;주어진 객체에서 메서드가 호출되며, 파라미터는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;모두 인스턴스 메서드의 인자&lt;/code&gt;로 전달된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x -&amp;gt; System.out.println(x)  // lambda expression
+System.out::println         // method reference
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;-생성자-참조&quot;&gt;✔ 생성자 참조&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;메서드 이름이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new&lt;/code&gt;라는 점만 제외하면 메서드 참조와 같다.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 13 May 2021 00:00:00 +0900</pubDate>
+        <link>//java/2021/05/13/method-reference.html</link>
+        <guid isPermaLink="true">//java/2021/05/13/method-reference.html</guid>
+        
+        
+        <category>Java</category>
+        
+      </item>
     
   </channel>
 </rss>

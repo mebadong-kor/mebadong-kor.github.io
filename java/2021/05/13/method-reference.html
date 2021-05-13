@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Method Reference::메서드 참조</title>
+
+<!-- favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+
+<!-- font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i" rel="stylesheet">
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="메바동 서식지" href="/feed.xml" />
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/page.css" media="all">
+
+</head>
+<body>
+
+  <div class="page-content clear-header--top clear-navbar--top clear-footer--bottom">
+
+    <header class="header">
+  <a class="header__avatar header__avatar--circle" href="/">
+    <img src="/assets/img/avatar.png" alt="mebadong">
+  </a>
+</header>
+
+
+    <nav class="navbar">
+  <ul>
+    <li class="navbar__item"><a href="/posts.html">Posts</a></li>
+    <li class="navbar__item"><a href="/categories.html">Categories</a></li>
+    <li class="navbar__item"><a href="https://github.com/mebadong-kor" target="_blank">GitHub</a></li>
+  </ul>
+</nav>
+
+
+    <main class="main clear-header--left">
+
+    <div class="post">
+  
+  <aside class="sidebar">
+    <div class="toc">
+      <ul><li><a href="#-overview">👓 Overview</a></li><li><a href="#-how-to-use">💡 How to use?</a><ul><li><a href="#-클래스명인스턴스메서드">✔ 클래스명::인스턴스메서드</a></li><li><a href="#-클래스명정적메서드">✔ 클래스명::정적메서드</a></li><li><a href="#-객체명인스턴스메서드">✔ 객체명::인스턴스메서드</a></li><li><a href="#-생성자-참조">✔ 생성자 참조</a></li></ul></li></ul>
+
+    </div>
+  </aside>
+
+  <div class="card">
+
+    
+    <h1 class="card__title article_title">
+      [Java]
+      Method reference::메서드 참조
+    </h1>
+    
+
+    
+    <div class="card__date">2021 / 05 / 13</div>
+    
+
+    <div class="article__content"><h1 id="-overview">👓 Overview</h1>
+
+<p> 메서드 참조(Method Reference)를 사용하면 불필요한 매개변수를 제거하고 <code class="language-plaintext highlighter-rouge">::</code> 기호를 사용하여 해당 메서드를 표현할 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>클래스명::메서드명
+or
+객체명::메서드명
+</code></pre></div></div>
+
+<h1 id="-how-to-use">💡 How to use?</h1>
+
+<p>메서드 표현식은 람다 표현식에 대응된다.</p>
+
+<h2 id="-클래스명인스턴스메서드">✔ 클래스명::인스턴스메서드</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">첫 번째 파라미터가 메서드의 수신자</code>가 되고, <code class="language-plaintext highlighter-rouge">나머지 파라미터는 해당 메서드의 인자</code>로 전달된다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(x, y) -&gt; x.compareToIgnoreCase(y)  // lambda expression
+String::compareToIgnoreCase         // method reference
+</code></pre></div></div>
+
+<h2 id="-클래스명정적메서드">✔ 클래스명::정적메서드</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">모든 파라미터가 정적 메서드의 인자</code>로 전달된다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x -&gt; Object.isNull(x) // lambda expression
+Object::isNull        // method reference
+</code></pre></div></div>
+
+<h2 id="-객체명인스턴스메서드">✔ 객체명::인스턴스메서드</h2>
+
+<ul>
+  <li>주어진 객체에서 메서드가 호출되며, 파라미터는 <code class="language-plaintext highlighter-rouge">모두 인스턴스 메서드의 인자</code>로 전달된다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x -&gt; System.out.println(x)  // lambda expression
+System.out::println         // method reference
+</code></pre></div></div>
+
+<h2 id="-생성자-참조">✔ 생성자 참조</h2>
+
+<ul>
+  <li>메서드 이름이 <code class="language-plaintext highlighter-rouge">new</code>라는 점만 제외하면 메서드 참조와 같다.</li>
+</ul>
+</div>
+
+  </div>
+
+
+  <div class="post__comment">
+    
+    <div class="post__comment--on">
+      
+      
+
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+  this.page.url = '/java/2021/05/13/method-reference.html';
+  this.page.identifier = '/java/2021/05/13/method-reference';
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://mebadong-kor-github-io.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </div>
+    
+  </div>
+
+
+  <div class="post__pagination">
+    <ul>
+      
+
+      
+    </ul>
+  </div>
+
+</div>
+
+
+    </main>
+
+    <footer class="footer clear-header--left">
+  <div class="footer__note">&copy; 2021 mebadong</div>
+  <div class="footer__note">Built with <a href="https://github.com/kkninjae/book" target="_blank">Book</a>, a <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> theme. favicon <a href="https://www.iconfinder.com/brian_ondari" target="_blnak">ICONFINDER</a><a href="/feed.xml" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"/></svg></a></div>
+  
+</footer>
+
+
+  </div>
+
+</body>
+</html>
