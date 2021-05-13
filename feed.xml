@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>메바동 서식지</title>
+    <description></description>
+    <link>//</link>
+    <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 13 May 2021 10:29:28 +0900</pubDate>
+    <lastBuildDate>Thu, 13 May 2021 10:29:28 +0900</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+    
+  </channel>
+</rss>
