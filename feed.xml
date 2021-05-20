@@ -5,8 +5,8 @@
     <description></description>
     <link>//</link>
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 May 2021 21:32:32 +0900</pubDate>
-    <lastBuildDate>Thu, 13 May 2021 21:32:32 +0900</lastBuildDate>
+    <pubDate>Thu, 20 May 2021 09:55:04 +0900</pubDate>
+    <lastBuildDate>Thu, 20 May 2021 09:55:04 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -387,12 +387,12 @@ public static final int DAYS_PER_YEAR = 365;
 
 &lt;blockquote&gt;
   &lt;ul&gt;
-    &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@see&lt;/code&gt; 태그는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&apos;참고&apos;&lt;/code&gt; 세션에 하이퍼링크를 추가한다. 클래스와 메서드에 모두 사용할 수 있다.&lt;/li&gt;
+    &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@see&lt;/code&gt; 태그는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'참고'&lt;/code&gt; 세션에 하이퍼링크를 추가한다. 클래스와 메서드에 모두 사용할 수 있다.&lt;/li&gt;
     &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;패키지.클래스#특징레이블&lt;/code&gt;&lt;/li&gt;
     &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a href=&quot;...&quot;&amp;gt;레이블&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
     &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;텍스트&quot;&lt;/code&gt;&lt;/li&gt;
     &lt;li&gt;클래스를 메서드나 변수의 이름과 구분할 땐 점이 아니라 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt;을 사용해야 한다.&lt;/li&gt;
-    &lt;li&gt;태그 뒤에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; 문자가 오면 큰따옴표 안에 있는 텍스트가 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&apos;참고&apos;&lt;/code&gt; 섹션에 표시된다.&lt;/li&gt;
+    &lt;li&gt;태그 뒤에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; 문자가 오면 큰따옴표 안에 있는 텍스트가 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'참고'&lt;/code&gt; 섹션에 표시된다.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/blockquote&gt;
 
