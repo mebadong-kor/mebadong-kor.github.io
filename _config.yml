@@ -57,6 +57,11 @@ jektex:
     - [ "\\Q", "\\mathbb{Q}" ]
     - [ "\\C", "\\mathbb{C}" ]
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
