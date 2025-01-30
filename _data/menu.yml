@@ -9,6 +9,12 @@ entries:
       - title: github
         url: https://github.com/mebadong-kor
 
+  - title: knowledge
+    url: knowledge-archive.html
+
+  - title: algorithm
+    url: algorithm-archive.html
+
   - title: posts
     post_list:
       limit: 5
