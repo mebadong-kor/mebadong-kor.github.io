@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[LeetCode] 2635. Apply Transform Over Each Element in Array"
-date: 2025-01-30
+date: 2025-02-03
 categories: [ algorithm ]
 ---
 
